@@ -1,0 +1,32 @@
+<!Doctypehtml>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").fadeIn("slow");
+			$("#div2").fadeIn();
+			$("#div3").fadeIn(300);
+		});
+		$("button").click(function(){
+			$("#div1").fadeOut("slow");
+			$("#div2").fadeOut();
+			$("#div3").fadeOut(300);
+		});
+	});
+</script>
+</head>
+
+<body>
+	<p>Demonstration de fade.</p>
+	
+	<button> Cliquez ici</button><br><br>
+	
+	<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+	<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+	<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+	
+	
+</body>
+</html>	

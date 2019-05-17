@@ -1,0 +1,58 @@
+<HTML>
+<HEAD> <TITLE> Exemple </TITLE> 
+	<SCRIPT LANGUAGE="JavaScript" >
+		/*
+		function bonjour(nom){
+			document.write("Bonjour ", nom);
+		}
+		
+		function volumeSpherephere(rayon){
+			return 4/3*Math.PI*Math.pow(rayon,3);
+		}
+		function calculerPrix(PrixUnitaire, NbArticles){
+			return PrixUnitaire*NbArticles;
+		}
+		*/
+		function saluer(){ alert("Bonjour Mr Dupont");}
+	</SCRIPT >
+
+
+</HEAD>
+<BODY>
+	<H1> Exécution immédiate </H1>
+<SCRIPT LANGUAGE="JavaScript" >
+	/*
+	bonjour("Mr Dupont");
+	document.write("Tu dois payer ", calculerPrix(150,4), " Euros.<BR>");
+	document.write("Le volume d'une sphere de rayon 1 est ", volumeSpherephere(1), "<BR>");
+	*/
+	saluer();
+	
+	var nombre= "huit";
+	if (!isNaN(nombre)) document.write(nombre, " est un nombre");
+	else document.write(nombre, " n'est pas un nombre");
+	
+	var chaine="3.14";
+	var entier= parseInt(chaine);
+	var reel= parseFloat(chaine);
+	
+	document.write("<BR>", entier, "<BR>");
+	document.write(reel, "<BR>");
+	
+	document.write(Math.random(), "<BR>");
+	document.write(Math.min(5,4), "<BR>");
+	document.write(Math.exp(1), "<BR>");
+	document.write(Math.ceil(2.2), "<BR>");
+	document.write(Math.floor(2.2), "<BR>");
+	document.write(Math.round(2.2), "<BR>");
+	document.write(Math.pow(2,3), "<BR>");
+
+</SCRIPT >
+	<H1> Exécution sur evenement onclick </H1>
+	<FORM><INPUT TYPE="button" name="Button" value="Salut" onclick="saluer()">
+	</FORM>
+	
+
+
+</BODY>
+</HTML>

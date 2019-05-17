@@ -1,0 +1,26 @@
+<HTML>
+<HEAD> <TITLE> Exemple </TITLE> </HEAD>
+<BODY>
+<SCRIPT >
+
+	var dt=new Date;
+	var jour= dt.getDay();		// renvoie un jour [0..6]
+	var numero= dt.getDate();	// renvoie le numero dans le mois
+	var mois= dt.getMonth();	// renvois le mois [0..11]
+	
+	var tab_jour= new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+	var tab_mois= new Array("Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre");
+	
+	document.write("Nous sommes le "+tab_jour[jour]+" "+ numero+" "+tab_mois[mois]+"\n");
+
+	
+	var les4saisons = new Array("printemps", "été", "automne", "hiver");
+	document.write("<br>Voici les 4 saisons : <UL>");
+	for (var i=0; i<4; i++){
+	document.write("<LI>", les4saisons[i], "</LI>");
+	}
+	document.write("</UL>")
+	
+</SCRIPT>
+</BODY>
+</HTML>

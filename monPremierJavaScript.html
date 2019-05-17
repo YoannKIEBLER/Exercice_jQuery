@@ -1,0 +1,34 @@
+<HTML>
+<HEAD> <TITLE> Exemple </TITLE> </HEAD>
+<BODY>
+<SCRIPT>
+var prenom_visiteur="Denis";
+var nom_visiteur="Dupont";
+var age_visiteur=29;
+
+//utilisation
+//var accueil="Bonjour " + prenom_visiteur + " " + nom_visiteur;
+var accueil = "Bonjour <br>" + nom_visiteur;
+
+document.write(accueil);
+
+	var total=0;
+	var factor=5;
+	var result=42;
+	var affiche="";
+	
+	function compute(base, factor){
+		result = base * factor;
+		factor*=2;
+		var total = result + factor;
+		return total;
+	}//compute
+	
+	affiche+= 'compute(5,4) = ' + compute(5,4);
+	affiche+= '\ntotal= ' +total+ '\n factor =' + factor + '\nresult = ' +result;
+	alert(affiche);
+
+
+</SCRIPT>
+</BODY>
+</HTML>

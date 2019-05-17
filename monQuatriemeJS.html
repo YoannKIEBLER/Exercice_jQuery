@@ -1,0 +1,60 @@
+<HTML>
+<HEAD> <TITLE> Exemple </TITLE> 
+	<SCRIPT LANGUAGE="JavaScript" >
+	
+		
+		function resoudre(){
+			
+			
+			var a= parseFloat(document.getElementById("a").value);
+			var b= parseFloat(document.getElementById("b").value);
+			var c= parseFloat(document.getElementById("c").value);
+			
+			var delta= (b*b)-(4*a*c);
+			
+			if(delta>0){
+				var x1= (-b-Math.sqrt(delta))/(2*a);
+				var x2= (-b+Math.sqrt(delta))/(2*a);
+				alert("x1= "+ x1+ "<BR>x2= "+x2);
+			}
+			else if(delta==0){
+				var x= -b/(2*a);
+				alert("x= "+x);
+			}
+			else{
+				alert("il n'y a pas de solution réelle");
+			}
+		
+		}
+		
+	</SCRIPT>
+	
+	::placeholder {
+		color: blue;
+		font-size: 1.5em;
+	}
+
+
+</HEAD>
+<BODY>	
+	
+	<H1> Bienvenue sur mon site<BR> </H1>
+	<BR>
+	<form>
+		Entrez votre equation :<BR>
+		<input type="text" id="a" name="a" value="a" placeholder="a">
+		 x²+ 
+		<input type="text" id="b" name="b" value="b">
+		 x+
+		<input type="text" id="c" name="c" value="c">
+		 =0<BR>
+		 <BR>		
+		<INPUT TYPE="button" value="Resoudre" onclick="resoudre()"/>
+
+	</form>
+	
+	
+
+
+</BODY>
+</HTML>
